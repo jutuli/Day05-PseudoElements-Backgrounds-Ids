@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin: 100px;
+  width: 400px;
+  height: 120px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.2rem;
+  position: relative;
+  margin-bottom: 1rem;
+  &::first-letter {
+    font-size: 2.4rem;
+  }
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/157/157247.png");
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    background-size: cover;
+    top: -1rem;
+    left: -5rem;
+  }
+  &::after {
+    content: "";
+    background-image: url("https://cdn-icons-png.flaticon.com/512/157/157248.png");
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    background-size: cover;
+    bottom: -3rem;
+    right: -5rem;
+  }
+}
+
+span {
+  text-decoration-line: underline;
+
+  &:nth-of-type(1):hover {
+    border: 2px solid black;
+  }
+  &:nth-of-type(2):hover {
+    background-color: black;
+    color: white;
+  }
+}
