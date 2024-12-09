@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+}
+
+body {
+  text-align: center;
+}
+
+#layout {
+  background-color: #f1f1f1;
+  color: #333;
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+button {
+  background-color: lightblue;
+  padding: 5px 15px;
+  border: 1px solid green;
+}
