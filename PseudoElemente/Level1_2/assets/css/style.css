@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  &::first-letter {
+    color: #00ced1;
+    font-size: 5rem;
+    font-weight: 600;
+  }
+  &:hover::first-letter {
+    color: #00bfff;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+ul > li {
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  &:nth-of-type(1):first-letter {
+    color: #00bfff;
+    text-decoration-line: overline;
+    font-size: 2.4rem;
+  }
+  &:nth-of-type(2):first-letter {
+    color: #c71585;
+    text-decoration-line: underline;
+    font-size: 2.4rem;
+  }
+  &:nth-of-type(3) {
+    text-decoration-line: line-through;
+    &:first-letter {
+      color: #32cd32;
+      text-decoration-line: line-through;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+section > p {
+  font-weight: 600;
+  padding: 1rem 0;
+  &:not(:first-of-type) {
+    &::first-letter {
+      color: red;
+    }
+    &::first-line {
+      color: #32cd32;
+    }
+
+    &:hover::first-line {
+      color: blue;
+    }
+    &:nth-of-type(odd) {
+      font-size: 1.2rem;
+    }
+    &:nth-of-type(even) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+section > p:nth-of-type(1) {
+  color: gray;
+  text-indent: 2rem;
+  &::first-line {
+    font-size: 1.4rem;
+  }
+}
